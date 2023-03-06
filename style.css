@@ -1,0 +1,154 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(186, 223, 112);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    justify-content:center;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    background-color:rgb(219, 246, 164);
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding:1%;
+    border: transparent;
+    border-radius: 15px;
+    box-shadow: yellowgreen 5px 5px 5px;
+}
+
+.container .header {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+.header .title {
+    width: 70%;
+    padding: 2%;
+}
+
+.header .cover-img {
+    padding: 0;
+    margin: auto;
+    border: 1px black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.content .title {
+    margin: auto;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.content form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    margin: auto;
+    /* justify-content: left; */
+}
+
+.content form label {
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.content form input {
+    margin: 10px;
+    padding: 0 12px;
+    height: 30px;
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+}
+
+.content form input:hover {
+    border-color: green;
+    box-shadow: green 2px 2px 15px;
+}
+
+.content textarea {
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    padding:  10px 12px;
+}
+
+.content textarea:hover {
+    border-color: green;
+    box-shadow: green 2px 2px 15px;
+}
+
+.content .submit {
+    width: 40%;
+    padding: 2% 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.content .submit button {
+    width: 60px;
+    height: 30px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    box-shadow: none;
+}
+
+.content .submit button:hover {
+    transform: scale(1.05);
+    box-shadow: green 1px 1px 10px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+    .header .title {
+        width: 50%;
+    }
+    .content form {
+        width: 60%;
+    }
+
+    .content .submit {
+        padding: 5% 8%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 70%;
+    }
+    .container .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .title {
+        width: 90%;
+    }
+    .content form {
+        width: 90%;
+    }
+    
+    .content .submit {
+        width: 40%;
+        padding: 8%;
+        justify-content: left;
+    }
+}
